@@ -1,0 +1,30 @@
+@use './../../sass/variables' as *;
+
+* {box-sizing: border-box;}
+.header {
+    padding: 0px 100px;
+    width: 100%;
+    position: relative;
+    img {
+        width: 100%;
+    }
+
+    .header-caption {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background: rgb(0 0 0 / 20%);
+        width: calc(100% - 200px);
+        position: absolute;
+        left: 100px;
+        top: 0px;
+        height: calc(100% + -4px);
+
+        p {
+            margin: 0px;
+            font-size: 48px;
+            color: white;
+        }
+    }
+}
