@@ -1,0 +1,10 @@
+@use './../../sass/variables' as *;
+
+.tag {
+    background-color: $pink_background;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 20px;
+    display: inline-block;
+    margin: 5px 2px;
+}

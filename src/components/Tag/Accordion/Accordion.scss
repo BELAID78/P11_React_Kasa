@@ -1,0 +1,22 @@
+@use './../../sass/variables' as *;
+
+.accordion {
+
+    display: flex;
+    flex-direction: column;
+
+    .accordion-title {
+        display: flex;
+        flex-direction: row;
+        background: $pink_background;
+        color: white;
+        justify-content: space-between;
+        padding: 0px 20px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .accordion-body {
+        padding: 0px 20px;
+    }
+}
