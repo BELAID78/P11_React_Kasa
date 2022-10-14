@@ -1,0 +1,12 @@
+@use './../../sass/variables' as *;
+
+.unorganizedList {
+    list-style: none;
+    padding: 0px;
+
+    li {
+        color: $pink_color;
+        font-size: 18px;
+        line-height: 25.67px;
+    }
+}
