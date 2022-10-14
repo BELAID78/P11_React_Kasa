@@ -9,10 +9,10 @@ const Accordion = ({isOpen, title, children}) => {
     const toggleAccordionHandler = () => {
         setOpen(open => !open);
     }
-
+    
     return (
-        <div className='accordion' onClick={toggleAccordionHandler}>
-            <div className='accordion-title'>
+        <div className='accordion'>
+            <div className='accordion-title' onClick={toggleAccordionHandler}>
                 <p>{title}</p>
                 {
                     open ? <img alt='accordion-arrow' src={arrowUp} /> : <img alt='accordion-arrow' src={arrowDown} />
