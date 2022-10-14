@@ -1,0 +1,21 @@
+$total_columns: 12;
+.row {
+    display: flex;
+    flex-wrap: wrap;
+
+    * {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@for $i from 1 through $total_columns {
+    @media screen and (min-width: 777px) {
+        .col-sm-#{$i} {
+            flex: 0 0 auto;
+            width: 100% / $total_columns * $i;
+            padding: 0px 30px;
+        }
+    }
+}
