@@ -1,0 +1,44 @@
+@use './../../sass/variables' as *;
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 100px;
+
+    .navbar-logo {
+        img {
+            width: 210px;
+            height: 68px;
+        }
+    }
+
+    .navbar-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        ul {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+
+            li {
+                margin:0px 28px;
+
+                a {
+                    text-decoration: none;
+                    cursor: pointer;
+                    font-size: 24px;
+                    color: $pink_color;
+
+                    &.active {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
