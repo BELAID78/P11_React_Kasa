@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Outlet, Route, NavLink} from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
+import About from "./pages/About";
 import Home from "./pages/Home";
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
 
             <Routes>
                 <Route path='/' element={<Home />} />
+                <Route path='about' element={<About />} />
             </Routes>
 
             <Outlet />
