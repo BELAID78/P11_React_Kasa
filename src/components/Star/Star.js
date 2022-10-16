@@ -7,7 +7,7 @@ const Star = ({rating}) => {
     let starItem = [];
 
     for(let i = 1; i <= 5; i++) {
-        starItem.push( <img alt='' src={(i <= rating) ? filledStarImage : emptyStarImage} /> )
+        starItem.push( <img key={Math.rendom()} alt='' src={(i <= rating) ? filledStarImage : emptyStarImage} /> )
     }
 
     return (
