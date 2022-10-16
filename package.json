@@ -1,7 +1,7 @@
 {
   "name": "p11-kasa",
   "version": "0.1.0",
-  "homepage": "https://belaid78.github.io/P11_React_Kasa/",
+  "homepage": "https://belaid78.github.io/P11_React_Kasa",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
