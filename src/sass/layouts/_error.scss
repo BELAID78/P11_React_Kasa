@@ -1,0 +1,29 @@
+@use './../variables' as *;
+
+.error {
+    height: calc(100vh - 152px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    .error-code {
+        color: $pink_color;
+        font-size: 288px;
+        margin: 0px;
+    }
+
+    .error-message {
+        color: $pink_color;
+        margin: 0px;
+        font-size: 36px;
+    }
+
+    .error-redirect {
+        color: $pink_color;
+        margin: 0px;
+        font-size: 18px;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
