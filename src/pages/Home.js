@@ -24,7 +24,7 @@ const Home = () => {
                     {
                         logements.map(logement => 
                             <div key={logement.id} className='col-sm-4'>
-                                <Thumb imagePath={logement.cover} caption={logement.title}></Thumb>
+                                <Thumb imagePath={logement.cover} id={logement.id} caption={logement.title}></Thumb>
                             </div>
                         )
                     }
