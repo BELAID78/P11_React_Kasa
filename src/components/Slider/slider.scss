@@ -4,6 +4,11 @@
     position: relative;
     margin-bottom: 25px;
     
+    @media screen and (max-width: 776px) {
+        padding: 0px;
+        height: 255px;
+    }
+
     .slider-content {
         height: 100%;
 
@@ -12,6 +17,10 @@
             width: 100%;
             object-fit: cover;
             border-radius: 25px;
+
+            @media screen and (max-width: 776px) {
+                border-radius: 10px;
+            }
         }
 
         .animate {
@@ -28,12 +37,21 @@
         justify-content: center;
         align-items: flex-end;
 
+        @media screen and (max-width: 776px) {
+            width: 100%
+        }
+
         .slider-prev-arrow {
             position: absolute;
             top: 50%;
             left: 25px;
             transform: translate(0px, -50%);
             cursor: pointer;
+
+            @media screen and (max-width: 776px) {
+                width: 12px;
+                height: 20px;
+            }
 
             &:hover {
                 opacity: 0.7;
@@ -46,6 +64,11 @@
             right: 25px;
             transform: translate(0px, -50%);
             cursor: pointer;
+
+            @media screen and (max-width: 776px) {
+                width: 12px;
+                height: 20px;
+            }
 
             &:hover {
                 opacity: 0.7;
