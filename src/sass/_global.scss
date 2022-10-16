@@ -30,4 +30,9 @@ html, body {
 .p-x-10 {
     padding-left: 10%;
     padding-right: 10%;
+
+    @media screen and (max-width: 776px) {
+        padding-left: 0%;
+    padding-right: 0%;
+    }
 }
