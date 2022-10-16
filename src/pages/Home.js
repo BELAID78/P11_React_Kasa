@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import Thumb from '../components/Thumb/Thumb';
 import Header from './../components/Header/Header';
-import homeHeaderImage from './../images/home.svg';
+import homeHeaderImage from './../images/home.png';
 
 const Home = () => {
     const [logements, setLogements] = useState([]);

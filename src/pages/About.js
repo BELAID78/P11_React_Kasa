@@ -1,7 +1,7 @@
 import Accordion from './../components/Accordion/Accordion'
 import Text from './../components/Text/Text'
 import Header from './../components/Header/Header';
-import aboutHeaderPicture from './../images/about.svg';
+import aboutHeaderPicture from './../images/about.png';
 
 const About = () => {
     return (
