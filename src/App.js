@@ -4,7 +4,6 @@ import Navbar from "./components/Navbar/Navbar";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Error from "./pages/Error";
-
 const App = () => {
     return (
         <BrowserRouter>
