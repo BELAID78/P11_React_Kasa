@@ -7,6 +7,10 @@
     align-items: center;
     padding: 66px 0px 29px 0px;
     margin-top: 30px;
+
+    @media screen and (max-width: 776px) {
+        margin-top: 10px;
+    }
     .footer-logo {
         width: 122px;
         height: 40px;
