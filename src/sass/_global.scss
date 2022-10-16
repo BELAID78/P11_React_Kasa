@@ -1,5 +1,11 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./../fonts/Montserrat\ Regular\ 400.ttf');
+}
+
 * {
     box-sizing: border-box;
+    font-family: 'Montserrat';
 }
 
 html, body {
@@ -8,10 +14,15 @@ html, body {
 }
 
 .container {
-    margin: 0px 60px;
-    width: calc(100% - 120px);
+    margin: 0px 70px;
+    width: calc(100% - 140px);
 }
 
 .hidden {
     display: none;
+}
+
+.p-x-10 {
+    padding-left: 10%;
+    padding-right: 10%;
 }
