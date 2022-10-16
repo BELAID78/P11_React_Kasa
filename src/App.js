@@ -4,6 +4,8 @@ import Navbar from "./components/Navbar/Navbar";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Error from "./pages/Error";
+import Detail from "./pages/Detail";
+
 const App = () => {
     return (
         <BrowserRouter>
@@ -21,6 +23,7 @@ const App = () => {
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='about' element={<About />} />
+                <Route path='detail/:id' element={<Detail />} />
                 <Route path='*' element={<Error />} />
             </Routes>
 
