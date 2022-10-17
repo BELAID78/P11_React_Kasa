@@ -32,7 +32,7 @@ const Detail = () => {
 
     return (
         <div className="container">
-
+            
             <Slider images={house.pictures} />
 
             <div className="row">
@@ -45,21 +45,29 @@ const Detail = () => {
                     {
                         house.tags.map(tag => <Tag key={id + Math.random()}>{tag}</Tag>)
                     }
+                </div>
 
+                <div className='col-sm-6'>
+                    <Profile name={house.host.name} avatar={house.host.picture} rating={house.rating} />
+                </div>
+                
+            </div>
+
+            <div className="row">
+                <div className="col-sm-6">
                     <Accordion isOpen={true} title='Description'>
                         <Text>{house.description}</Text>
                     </Accordion>
 
                 </div>
-
-                <div className='col-sm-6'>
-                    <Profile name={house.host.name} avatar={house.host.picture} rating={house.rating} />
+                
+                <div className="col-sm-6">
 
                     <Accordion isOpen={true} title='Equipements'>
                         <UnorganizedList lists={house.equipments}/>
                     </Accordion>
                 </div>
-                
+
             </div>
         </div>
     )
