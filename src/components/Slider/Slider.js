@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import './slider.scss';
 import nextArrow from './../../images/arrow-next.svg';
 import prevArrow from './../../images/arrow-prev.svg';
