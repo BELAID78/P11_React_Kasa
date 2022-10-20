@@ -1,6 +1,6 @@
 import './profile.scss';
 
-import Star from './../Star/Star';
+import Star from '../Star/Star';
 
 const Profile = ({name, avatar, rating}) => {
     const firstName = name.split(' ')[0],
