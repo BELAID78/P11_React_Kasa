@@ -15,9 +15,13 @@
         border-radius: 10px;
         cursor: pointer;
     }
-
+    img{
+            width: 28px;
+            height: 51px;
+        }
     .accordion-body {
         padding: 0px 20px;
         background-color: $gray_background;
     }
+    
 }
