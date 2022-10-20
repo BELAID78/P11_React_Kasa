@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import Accordion from "../components/Accordion/Accordion";
 import Profile from "../components/Profile/Profile";
 import Slider from "../components/Slider/Slider";
@@ -11,6 +11,7 @@ import './../sass/layouts/_detail.scss';
 
 const Detail = () => {
     const [house, setHouse] = useState({});
+    const navigate = useNavigate();
 
     const {id} = useParams();
 
@@ -20,11 +21,15 @@ const Detail = () => {
         .then(response => response.json())
         .then(data => {
             const foundedHouse = data.find(currentHouse => currentHouse.id === id);
+
+            if(!foundedHouse) {
+                navigate('/error');
+            }
             setHouse(foundedHouse);
         })
         .catch(err => console.log(err));
 
-    }, [id]);
+    }, [id, navigate]);
 
     if(Object.keys(house).length <= 0) {
         return <p>Loading ...</p>;
